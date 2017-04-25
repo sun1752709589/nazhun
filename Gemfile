@@ -16,12 +16,16 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'redis', '~> 3.0'
 gem 'bcrypt', '~> 3.1.7'
-
+gem 'oj'
+gem 'httparty'
 group :development, :test do
+  gem 'byebug', platform: :mri
   gem 'pry'
   gem 'pry-nav'
+  gem 'awesome_print'
 end
 group :development do
+  gem 'capistrano', '~> 3.5.0'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
